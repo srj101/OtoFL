@@ -67,7 +67,7 @@ This should report 1,142 images, 207 near-duplicate pairs and 978 groups.
 **2. Run the experiments**
 
 ```bash
-python experiments/run_jobs.py work --workers 4            # all 316 runs
+python experiments/run_jobs.py work --workers 4            # all 405 runs
 python experiments/run_jobs.py work --filter fl/S1/         # or a subset, e.g. scenario S1
 ```
 
