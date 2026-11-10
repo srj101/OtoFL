@@ -4,7 +4,7 @@
 
 Code for the paper
 
-> Md. Salim Reza Joy, Nusrat Faruqi. **When does federated learning help otoscopy? A two-hospital benchmark of federated strategies and differential privacy.** Submitted to *Computer Methods and Programs in Biomedicine*, 2026.
+> Md. Salim Reza Joy, Nusrat Faruqi. **When does federated learning help otoscopy? A two-hospital benchmark of federated strategies and differential privacy.** Manuscript under review, 2026.
 
 OtoFL combines two public otoscopy datasets from hospitals in Chile and Turkey (1,142 images, five classes), groups near-duplicate video frames before splitting, and compares federated strategies (FedAvg, FedProx, SCAFFOLD, FedBN, AP-FedBN, SiloBN, FedPer, FedAvg with group normalisation) against local and centralised training, with optional sample-level differential privacy (DP-SGD). Every number, table and figure in the paper is produced by the scripts in this repository.
 
