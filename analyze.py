@@ -515,6 +515,7 @@ for site, sname in [(0, "Site 1"), (1, "Site 2")]:
         pc = perclass(v, site)
         summary["perclass"][f"{sname}|{nm}"] = {k_: np.asarray(x).tolist() for k_, x in pc.items() if k_ not in ("sens_ci", "spec_ci")}
         summary["perclass"][f"{sname}|{nm}"]["sens_ci"] = [np.asarray(x).tolist() for x in pc["sens_ci"]]
+        summary["perclass"][f"{sname}|{nm}"]["spec_ci"] = [np.asarray(x).tolist() for x in pc["spec_ci"]]
         cells = []
         for c in range(5):
             if pc["n"][c] == 0:
