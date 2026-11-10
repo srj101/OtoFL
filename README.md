@@ -1,5 +1,7 @@
 # OtoFL: a federated learning benchmark for otoscopy
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)
+
 Code for the paper
 
 > Md. Salim Reza Joy, Nusrat Faruqi. **When does federated learning help otoscopy? A two-hospital benchmark of federated strategies and differential privacy.** Submitted to *Computer Methods and Programs in Biomedicine*, 2026.
