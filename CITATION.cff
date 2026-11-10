@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "OtoFL: federated learning benchmark for otoscopy"
+authors:
+  - family-names: Joy
+    given-names: Md. Salim Reza
+  - family-names: Faruqi
+    given-names: Nusrat
+license: MIT
+repository-code: "https://github.com/srj101/OtoFL"
+preferred-citation:
+  type: article
+  title: "When does federated learning help otoscopy? A two-hospital benchmark of federated strategies and differential privacy"
+  authors:
+    - family-names: Joy
+      given-names: Md. Salim Reza
+    - family-names: Faruqi
+      given-names: Nusrat
+  journal: "Computer Methods and Programs in Biomedicine"
+  status: submitted
+  year: 2026

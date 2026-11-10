@@ -1,0 +1,316 @@
+abl/S2/lam27_s0|--method otofl --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lam 27.0
+abl/S2/lam27_s1|--method otofl --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lam 27.0
+abl/S2/lam27_s2|--method otofl --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lam 27.0
+abl/S2/lam3_s0|--method otofl --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lam 3.0
+abl/S2/lam3_s1|--method otofl --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lam 3.0
+abl/S2/lam3_s2|--method otofl --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lam 3.0
+abl/S2/otofl_fixedmu_s0|--method otofl_fixedmu --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+abl/S2/otofl_fixedmu_s1|--method otofl_fixedmu --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+abl/S2/otofl_fixedmu_s2|--method otofl_fixedmu --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+abl/S2/otofl_nobn_s0|--method otofl_nobn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+abl/S2/otofl_nobn_s1|--method otofl_nobn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+abl/S2/otofl_nobn_s2|--method otofl_nobn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+central/densenet121_s0|--mode central --model densenet121 --seed 0 --epochs 40 --lr 0.01
+central/densenet121_s1|--mode central --model densenet121 --seed 1 --epochs 40 --lr 0.01
+central/densenet121_s2|--mode central --model densenet121 --seed 2 --epochs 40 --lr 0.01
+central/efficientnet_b0_s0|--mode central --model efficientnet_b0 --seed 0 --epochs 40 --lr 0.01
+central/efficientnet_b0_s1|--mode central --model efficientnet_b0 --seed 1 --epochs 40 --lr 0.01
+central/efficientnet_b0_s2|--mode central --model efficientnet_b0 --seed 2 --epochs 40 --lr 0.01
+central/fenet5_s0|--mode central --seed 0 --epochs 40
+central/fenet5_s1|--mode central --seed 1 --epochs 40
+central/fenet5_s2|--mode central --seed 2 --epochs 40
+central/mobilenet_v3_large_s0|--mode central --model mobilenet_v3_large --seed 0 --epochs 40 --lr 0.01
+central/mobilenet_v3_large_s1|--mode central --model mobilenet_v3_large --seed 1 --epochs 40 --lr 0.01
+central/mobilenet_v3_large_s2|--mode central --model mobilenet_v3_large --seed 2 --epochs 40 --lr 0.01
+central/resnet50_s0|--mode central --model resnet50 --seed 0 --epochs 40 --lr 0.01
+central/resnet50_s1|--mode central --model resnet50 --seed 1 --epochs 40 --lr 0.01
+central/resnet50_s2|--mode central --model resnet50 --seed 2 --epochs 40 --lr 0.01
+dp/eps0_s0|--model mnv3_frozen --method otofl --seed 0 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128
+dp/eps0_s1|--model mnv3_frozen --method otofl --seed 1 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128
+dp/eps0_s2|--model mnv3_frozen --method otofl --seed 2 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128
+dp/eps1_s0|--model mnv3_frozen --method otofl --seed 0 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 1.0
+dp/eps1_s1|--model mnv3_frozen --method otofl --seed 1 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 1.0
+dp/eps1_s2|--model mnv3_frozen --method otofl --seed 2 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 1.0
+dp/eps2_s0|--model mnv3_frozen --method otofl --seed 0 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 2.0
+dp/eps2_s1|--model mnv3_frozen --method otofl --seed 1 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 2.0
+dp/eps2_s2|--model mnv3_frozen --method otofl --seed 2 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 2.0
+dp/eps4_s0|--model mnv3_frozen --method otofl --seed 0 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 4.0
+dp/eps4_s1|--model mnv3_frozen --method otofl --seed 1 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 4.0
+dp/eps4_s2|--model mnv3_frozen --method otofl --seed 2 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 4.0
+dp/eps8_s0|--model mnv3_frozen --method otofl --seed 0 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 8.0
+dp/eps8_s1|--model mnv3_frozen --method otofl --seed 1 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 8.0
+dp/eps8_s2|--model mnv3_frozen --method otofl --seed 2 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128 --dp_eps 8.0
+dp/fedavg_eps0_s0|--model mnv3_frozen --seed 0 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128
+dp/fedavg_eps0_s1|--model mnv3_frozen --seed 1 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128
+dp/fedavg_eps0_s2|--model mnv3_frozen --seed 2 --rounds 40 --local_epochs 1 --lr 0.1 --bs 128
+fl/S1/fedavg_s0|--seed 0 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s1|--seed 1 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s2|--seed 2 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s3|--seed 3 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s4|--seed 4 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s5|--seed 5 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s6|--seed 6 --rounds 40 --local_epochs 1
+fl/S1/fedavg_s7|--seed 7 --rounds 40 --local_epochs 1
+fl/S1/fedbn_ft_s0|--method fedbn --seed 0 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.002 --ft_select
+fl/S1/fedbn_ft_s1|--method fedbn --seed 1 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.0005 --ft_select
+fl/S1/fedbn_ft_s2|--method fedbn --seed 2 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.001 --ft_select
+fl/S1/fedbn_ft_s3|--method fedbn --seed 3 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.002 --ft_select
+fl/S1/fedbn_ft_s4|--method fedbn --seed 4 --rounds 40 --local_epochs 1 --finetune 3 --ft_select
+fl/S1/fedbn_ft_s5|--method fedbn --seed 5 --rounds 40 --local_epochs 1 --finetune 3 --ft_lr 0.002 --ft_select
+fl/S1/fedbn_ft_s6|--method fedbn --seed 6 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.0005 --ft_select
+fl/S1/fedbn_ft_s7|--method fedbn --seed 7 --rounds 40 --local_epochs 1 --finetune 3 --ft_select
+fl/S1/fedbn_s0|--method fedbn --seed 0 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s1|--method fedbn --seed 1 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s2|--method fedbn --seed 2 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s3|--method fedbn --seed 3 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s4|--method fedbn --seed 4 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s5|--method fedbn --seed 5 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s6|--method fedbn --seed 6 --rounds 40 --local_epochs 1
+fl/S1/fedbn_s7|--method fedbn --seed 7 --rounds 40 --local_epochs 1
+fl/S1/fedprox_s0|--method fedprox --seed 0 --rounds 40 --local_epochs 1
+fl/S1/fedprox_s1|--method fedprox --seed 1 --rounds 40 --local_epochs 1
+fl/S1/fedprox_s2|--method fedprox --seed 2 --rounds 40 --local_epochs 1
+fl/S1/otofl_s0|--method otofl --seed 0 --rounds 40 --local_epochs 1
+fl/S1/otofl_s1|--method otofl --seed 1 --rounds 40 --local_epochs 1
+fl/S1/otofl_s2|--method otofl --seed 2 --rounds 40 --local_epochs 1
+fl/S1/otofl_s3|--method otofl --seed 3 --rounds 40 --local_epochs 1
+fl/S1/otofl_s4|--method otofl --seed 4 --rounds 40 --local_epochs 1
+fl/S1/otofl_s5|--method otofl --seed 5 --rounds 40 --local_epochs 1
+fl/S1/otofl_s6|--method otofl --seed 6 --rounds 40 --local_epochs 1
+fl/S1/otofl_s7|--method otofl --seed 7 --rounds 40 --local_epochs 1
+fl/S1/scaffold_s0|--method scaffold --seed 0 --rounds 40 --local_epochs 1
+fl/S1/scaffold_s1|--method scaffold --seed 1 --rounds 40 --local_epochs 1
+fl/S1/scaffold_s2|--method scaffold --seed 2 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s0|--seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s1|--seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s2|--seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s3|--seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s4|--seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s5|--seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s6|--seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedavg_s7|--seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_ft_s0|--method fedbn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.001 --ft_select
+fl/S2/fedbn_ft_s1|--method fedbn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 3 --ft_lr 0.002 --ft_select
+fl/S2/fedbn_ft_s2|--method fedbn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_select
+fl/S2/fedbn_ft_s3|--method fedbn --seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.0005 --ft_select
+fl/S2/fedbn_ft_s4|--method fedbn --seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.0005 --ft_select
+fl/S2/fedbn_ft_s5|--method fedbn --seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.001 --ft_select
+fl/S2/fedbn_ft_s6|--method fedbn --seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.0005 --ft_select
+fl/S2/fedbn_ft_s7|--method fedbn --seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.001 --ft_select
+fl/S2/fedbn_s0|--method fedbn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s1|--method fedbn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s2|--method fedbn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s3|--method fedbn --seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s4|--method fedbn --seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s5|--method fedbn --seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s6|--method fedbn --seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedbn_s7|--method fedbn --seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedprox_s0|--method fedprox --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedprox_s1|--method fedprox --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/fedprox_s2|--method fedprox --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s0|--method local --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s1|--method local --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s2|--method local --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s3|--method local --seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s4|--method local --seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s5|--method local --seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s6|--method local --seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/local_s7|--method local --seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s0|--method otofl --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s1|--method otofl --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s2|--method otofl --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s3|--method otofl --seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s4|--method otofl --seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s5|--method otofl --seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s6|--method otofl --seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/otofl_s7|--method otofl --seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/scaffold_s0|--method scaffold --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/scaffold_s1|--method scaffold --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S2/scaffold_s2|--method scaffold --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s0|--seed 0 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s1|--seed 1 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s2|--seed 2 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s3|--seed 3 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s4|--seed 4 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s5|--seed 5 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s6|--seed 6 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedavg_s7|--seed 7 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_ft_s0|--method fedbn --seed 0 --clients 10 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.0005 --ft_select
+fl/S3/fedbn_ft_s1|--method fedbn --seed 1 --clients 10 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.001 --ft_select
+fl/S3/fedbn_ft_s2|--method fedbn --seed 2 --clients 10 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.001 --ft_select
+fl/S3/fedbn_ft_s3|--method fedbn --seed 3 --clients 10 --rounds 40 --local_epochs 1 --finetune 3 --ft_lr 0.0005 --ft_select
+fl/S3/fedbn_ft_s4|--method fedbn --seed 4 --clients 10 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.0005 --ft_select
+fl/S3/fedbn_ft_s5|--method fedbn --seed 5 --clients 10 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.0005 --ft_select
+fl/S3/fedbn_ft_s6|--method fedbn --seed 6 --clients 10 --rounds 40 --local_epochs 1 --finetune 1 --ft_lr 0.001 --ft_select
+fl/S3/fedbn_ft_s7|--method fedbn --seed 7 --clients 10 --rounds 40 --local_epochs 1 --ft_lr 0.0 --ft_select
+fl/S3/fedbn_s0|--method fedbn --seed 0 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s1|--method fedbn --seed 1 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s2|--method fedbn --seed 2 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s3|--method fedbn --seed 3 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s4|--method fedbn --seed 4 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s5|--method fedbn --seed 5 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s6|--method fedbn --seed 6 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedbn_s7|--method fedbn --seed 7 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedprox_s0|--method fedprox --seed 0 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedprox_s1|--method fedprox --seed 1 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/fedprox_s2|--method fedprox --seed 2 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s0|--method local --seed 0 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s1|--method local --seed 1 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s2|--method local --seed 2 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s3|--method local --seed 3 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s4|--method local --seed 4 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s5|--method local --seed 5 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s6|--method local --seed 6 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/local_s7|--method local --seed 7 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s0|--method otofl --seed 0 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s1|--method otofl --seed 1 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s2|--method otofl --seed 2 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s3|--method otofl --seed 3 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s4|--method otofl --seed 4 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s5|--method otofl --seed 5 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s6|--method otofl --seed 6 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/otofl_s7|--method otofl --seed 7 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/scaffold_s0|--method scaffold --seed 0 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/scaffold_s1|--method scaffold --seed 1 --clients 10 --rounds 40 --local_epochs 1
+fl/S3/scaffold_s2|--method scaffold --seed 2 --clients 10 --rounds 40 --local_epochs 1
+fl_mnv3/S2/fedavg_s0|--model mobilenet_v3_large --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedavg_s1|--model mobilenet_v3_large --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedavg_s2|--model mobilenet_v3_large --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedbn_s0|--model mobilenet_v3_large --method fedbn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedbn_s1|--model mobilenet_v3_large --method fedbn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedbn_s2|--model mobilenet_v3_large --method fedbn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedprox_s0|--model mobilenet_v3_large --method fedprox --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedprox_s1|--model mobilenet_v3_large --method fedprox --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/fedprox_s2|--model mobilenet_v3_large --method fedprox --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/otofl_s0|--model mobilenet_v3_large --method otofl --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/otofl_s1|--model mobilenet_v3_large --method otofl --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+fl_mnv3/S2/otofl_s2|--model mobilenet_v3_large --method otofl --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --lr 0.01
+ftcheck/S1_lr001|--method fedbn --seed 0 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.001
+ftcheck/S3_lr001|--method fedbn --seed 0 --clients 10 --rounds 40 --local_epochs 1 --finetune 5 --ft_lr 0.001
+leak/official_s0|--mode central --seed 0 --epochs 40 --split official
+leak/official_s1|--mode central --seed 1 --epochs 40 --split official
+leak/official_s2|--mode central --seed 2 --epochs 40 --split official
+leak/random_s0|--mode central --seed 0 --epochs 40 --split random
+leak/random_s1|--mode central --seed 1 --epochs 40 --split random
+leak/random_s2|--mode central --seed 2 --epochs 40 --split random
+local/site0_s0|--mode central --seed 0 --epochs 40 --train_site 0
+local/site0_s1|--mode central --seed 1 --epochs 40 --train_site 0
+local/site0_s2|--mode central --seed 2 --epochs 40 --train_site 0
+local/site0_s3|--mode central --seed 3 --epochs 40 --train_site 0
+local/site0_s4|--mode central --seed 4 --epochs 40 --train_site 0
+local/site0_s5|--mode central --seed 5 --epochs 40 --train_site 0
+local/site0_s6|--mode central --seed 6 --epochs 40 --train_site 0
+local/site0_s7|--mode central --seed 7 --epochs 40 --train_site 0
+local/site1_s0|--mode central --seed 0 --epochs 40 --train_site 1
+local/site1_s1|--mode central --seed 1 --epochs 40 --train_site 1
+local/site1_s2|--mode central --seed 2 --epochs 40 --train_site 1
+local/site1_s3|--mode central --seed 3 --epochs 40 --train_site 1
+local/site1_s4|--mode central --seed 4 --epochs 40 --train_site 1
+local/site1_s5|--mode central --seed 5 --epochs 40 --train_site 1
+local/site1_s6|--mode central --seed 6 --epochs 40 --train_site 1
+local/site1_s7|--mode central --seed 7 --epochs 40 --train_site 1
+scale/K20/fedavg_s0|--seed 0 --clients 20 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K20/fedavg_s1|--seed 1 --clients 20 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K20/fedavg_s2|--seed 2 --clients 20 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K20/otofl_s0|--method otofl --seed 0 --clients 20 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K20/otofl_s1|--method otofl --seed 1 --clients 20 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K20/otofl_s2|--method otofl --seed 2 --clients 20 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K5/fedavg_s0|--seed 0 --clients 5 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K5/fedavg_s1|--seed 1 --clients 5 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K5/fedavg_s2|--seed 2 --clients 5 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K5/otofl_s0|--method otofl --seed 0 --clients 5 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K5/otofl_s1|--method otofl --seed 1 --clients 5 --alpha 0.3 --rounds 40 --local_epochs 1
+scale/K5/otofl_s2|--method otofl --seed 2 --clients 5 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S1/fedavg_E3_s0|--seed 0 --rounds 40 --local_epochs 3
+tune/S1/fedavg_E3_s1|--seed 1 --rounds 40 --local_epochs 3
+tune/S1/fedavg_E3_s2|--seed 2 --rounds 40 --local_epochs 3
+tune/S1/fedavg_gn_s0|--model fenet5_gn --seed 0 --rounds 40 --local_epochs 1
+tune/S1/fedavg_gn_s1|--model fenet5_gn --seed 1 --rounds 40 --local_epochs 1
+tune/S1/fedavg_gn_s2|--model fenet5_gn --seed 2 --rounds 40 --local_epochs 1
+tune/S1/fedbn_E3_s0|--method fedbn --seed 0 --rounds 40 --local_epochs 3
+tune/S1/fedbn_E3_s1|--method fedbn --seed 1 --rounds 40 --local_epochs 3
+tune/S1/fedbn_E3_s2|--method fedbn --seed 2 --rounds 40 --local_epochs 3
+tune/S1/fedper_s0|--method fedper --seed 0 --rounds 40 --local_epochs 1
+tune/S1/fedper_s1|--method fedper --seed 1 --rounds 40 --local_epochs 1
+tune/S1/fedper_s2|--method fedper --seed 2 --rounds 40 --local_epochs 1
+tune/S1/fedprox_mu0.1_s0|--method fedprox --seed 0 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S1/fedprox_mu0.1_s1|--method fedprox --seed 1 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S1/fedprox_mu0.1_s2|--method fedprox --seed 2 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S1/fedprox_mu1_s0|--method fedprox --seed 0 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S1/fedprox_mu1_s1|--method fedprox --seed 1 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S1/fedprox_mu1_s2|--method fedprox --seed 2 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S1/scaffold_mom_s0|--method scaffold --seed 0 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S1/scaffold_mom_s1|--method scaffold --seed 1 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S1/scaffold_mom_s2|--method scaffold --seed 2 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S1/silobn_s0|--method silobn --seed 0 --rounds 40 --local_epochs 1
+tune/S1/silobn_s1|--method silobn --seed 1 --rounds 40 --local_epochs 1
+tune/S1/silobn_s2|--method silobn --seed 2 --rounds 40 --local_epochs 1
+tune/S2/fedavg_E3_s0|--seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedavg_E3_s1|--seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedavg_E3_s2|--seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedavg_gn_s0|--model fenet5_gn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedavg_gn_s1|--model fenet5_gn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedavg_gn_s2|--model fenet5_gn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedbn_E3_s0|--method fedbn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedbn_E3_s1|--method fedbn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedbn_E3_s2|--method fedbn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_s0|--method fedper --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s1|--method fedper --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s2|--method fedper --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedprox_E3_s0|--method fedprox --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedprox_E3_s1|--method fedprox --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedprox_E3_s2|--method fedprox --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedprox_mu0.1_s0|--method fedprox --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S2/fedprox_mu0.1_s1|--method fedprox --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S2/fedprox_mu0.1_s2|--method fedprox --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S2/fedprox_mu1_s0|--method fedprox --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S2/fedprox_mu1_s1|--method fedprox --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S2/fedprox_mu1_s2|--method fedprox --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S2/local_E3_s0|--method local --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/local_E3_s1|--method local --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/local_E3_s2|--method local --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/otofl_proxfix_s0|--method otofl --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --prox_skip_local
+tune/S2/otofl_proxfix_s1|--method otofl --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --prox_skip_local
+tune/S2/otofl_proxfix_s2|--method otofl --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --prox_skip_local
+tune/S2/scaffold_E3_s0|--method scaffold --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/scaffold_E3_s1|--method scaffold --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/scaffold_E3_s2|--method scaffold --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/scaffold_mom_s0|--method scaffold --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S2/scaffold_mom_s1|--method scaffold --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S2/scaffold_mom_s2|--method scaffold --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S2/silobn_s0|--method silobn --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/silobn_s1|--method silobn --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/silobn_s2|--method silobn --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S3/fedavg_E3_s0|--seed 0 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedavg_E3_s1|--seed 1 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedavg_E3_s2|--seed 2 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedavg_gn_s0|--model fenet5_gn --seed 0 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedavg_gn_s1|--model fenet5_gn --seed 1 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedavg_gn_s2|--model fenet5_gn --seed 2 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedbn_E3_s0|--method fedbn --seed 0 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedbn_E3_s1|--method fedbn --seed 1 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedbn_E3_s2|--method fedbn --seed 2 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_s0|--method fedper --seed 0 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s1|--method fedper --seed 1 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s2|--method fedper --seed 2 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedprox_mu0.1_s0|--method fedprox --seed 0 --clients 10 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S3/fedprox_mu0.1_s1|--method fedprox --seed 1 --clients 10 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S3/fedprox_mu0.1_s2|--method fedprox --seed 2 --clients 10 --rounds 40 --local_epochs 1 --mu 0.1
+tune/S3/fedprox_mu1_s0|--method fedprox --seed 0 --clients 10 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S3/fedprox_mu1_s1|--method fedprox --seed 1 --clients 10 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S3/fedprox_mu1_s2|--method fedprox --seed 2 --clients 10 --rounds 40 --local_epochs 1 --mu 1.0
+tune/S3/local_E3_s0|--method local --seed 0 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/local_E3_s1|--method local --seed 1 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/local_E3_s2|--method local --seed 2 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/scaffold_mom_s0|--method scaffold --seed 0 --clients 10 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S3/scaffold_mom_s1|--method scaffold --seed 1 --clients 10 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S3/scaffold_mom_s2|--method scaffold --seed 2 --clients 10 --rounds 40 --local_epochs 1 --scaffold_mom
+tune/S3/silobn_s0|--method silobn --seed 0 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/silobn_s1|--method silobn --seed 1 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/silobn_s2|--method silobn --seed 2 --clients 10 --rounds 40 --local_epochs 1
+tune/local/site0_e120_s0|--mode central --seed 0 --epochs 120 --train_site 0
+tune/local/site0_e120_s1|--mode central --seed 1 --epochs 120 --train_site 0
+tune/local/site0_e120_s2|--mode central --seed 2 --epochs 120 --train_site 0
+tune/local/site1_e120_s0|--mode central --seed 0 --epochs 120 --train_site 1
+tune/local/site1_e120_s1|--mode central --seed 1 --epochs 120 --train_site 1
+tune/local/site1_e120_s2|--mode central --seed 2 --epochs 120 --train_site 1

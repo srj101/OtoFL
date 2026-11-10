@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# data, caches and outputs are not versioned
+data/
+cache/
+res*/
+ana*/
+logs/
+post/
+models/
+*.pt
+*.npz
+*.rar
+*.zip

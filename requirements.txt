@@ -1,0 +1,11 @@
+# Python 3.10+ ; install PyTorch for your platform first (https://pytorch.org)
+torch>=2.1
+torchvision>=0.16
+scikit-learn==1.7.2   # pinned: newer releases change StratifiedGroupKFold splits for a fixed seed
+numpy>=1.24
+scipy>=1.10
+pillow>=10.0
+imagehash>=4.3
+opacus>=1.4           # differential privacy runs only
+matplotlib>=3.7
+rarfile>=4.0          # only if `unrar` is not installed (Site 1 archive is .rar)
