@@ -196,7 +196,9 @@ M = ["fedavg", "fedprox", "scaffold", "fedbn", "otofl"]
 ST = [("S1", "fl/S1"), ("S2", "fl/S2"), ("S3", "fl/S3")]
 fl = {(st, m): group(p, m) for st, p in ST for m in M}
 rows = []
-bestf = {(st, key): max((agg(fl[(st, m)], key)[0] for m in M if fl[(st, m)]), default=0)
+for st, _ in ST:
+    fl[(st, "fedper")] = group(f"tune/{st}", "fedper")
+bestf = {(st, key): max((agg(fl[(st, m)], key)[0] for m in M + ["fedper"] if len(fl[(st, m)]) > 3), default=0)
          for st, _ in ST for key in ["bacc", "f1", "worst"]}
 for m in M:
     cells = []
@@ -214,6 +216,17 @@ for m in M:
         if fl[(st, m)]:
             summary[f"fl_{st}_{m}"] = {key: agg(fl[(st, m)], key)[:2] for key in
                                        ["acc", "bacc", "f1", "auc", "mcc", "kappa", "worst", "acc_chile", "acc_turkey", "ece"]}
+# FedPer (local normalisation and local classifier head), eight seeds
+if all(len(fl[(st, "fedper")]) > 3 for st, _ in ST):
+    cells = []
+    for st, _ in ST:
+        v = fl[(st, "fedper")]
+        for key in ["bacc", "f1"] + (["worst"] if st == "S2" else []):
+            mu = agg(v, key)
+            cells.append(fmt(*mu, bold=abs(mu[0] - bestf[(st, key)]) < 1e-9))
+        summary[f"fl_{st}_fedper"] = {key: agg(v, key)[:2] for key in
+                                      ["acc", "bacc", "f1", "auc", "mcc", "kappa", "worst", "acc_chile", "acc_turkey", "ece"]}
+    rows.append("FedPer$^{b}$ & " + " & ".join(cells) + " \\\\")
 # personalised FedBN: brief local fine-tuning after federated training
 for st, p_ in ST:
     fl[(st, "fedbn_ft")] = group(p_, "fedbn_ft")
@@ -261,12 +274,12 @@ open(os.path.join(TAB, "fl.tex"), "w").write("\n".join(rows))
 sig = []
 for st, _ in ST:
     for a_, b_ in [("fedbn", "fedavg"), ("fedbn", "fedprox"), ("fedbn", "scaffold"), ("fedprox", "fedavg"),
-                   ("otofl", "fedavg"), ("otofl", "fedbn"), ("fedbn_ft", "fedbn")]:
+                   ("otofl", "fedavg"), ("otofl", "fedbn"), ("fedbn_ft", "fedbn"), ("fedper", "fedbn")]:
         if fl[(st, a_)] and fl[(st, b_)]:
             sig.append(sigrec(st, a_, b_, fl[(st, a_)], fl[(st, b_)]))
 for st_ in ("S1", "S2", "S3"):
     if fl.get((st_, "local")):
-        for m in ["fedavg", "fedbn", "otofl", "fedbn_ft"]:
+        for m in ["fedavg", "fedbn", "otofl", "fedbn_ft", "fedper"]:
             if not fl.get((st_, m)):
                 continue
             sig.append(sigrec(st_, m, "local", fl[(st_, m)], fl[(st_, "local")]))
@@ -419,6 +432,27 @@ for st in ("S1", "S2", "S3"):
         sig_t.append(sigrec(st, "fedbn_R120", "fedbn_E3", cm[(st, "fedbn_R120")], cm[(st, "fedbn_E3")]))
     if cm.get((st, "fedbn_R120")):
         sig_t.append(sigrec(st, "fedbn_R120", "fedbn", cm[(st, "fedbn_R120")], fl[(st, "fedbn")]))
+# FedPer with all available seeds (main schedule and three local epochs per round)
+FP = {}
+for st in ("S1", "S2", "S3"):
+    FP[(st, "fedper")] = group(f"tune/{st}", "fedper")
+    FP[(st, "fedper_E3")] = group(f"tune/{st}", "fedper_E3")
+    for k, v in FP.items():
+        if k[0] == st and v:
+            summary[f"fp_{st}_{k[1]}"] = {key: agg(v, key)[:2] for key in ["acc", "bacc", "f1", "worst", "acc_chile", "acc_turkey"]}
+            summary[f"fp_{st}_{k[1]}"]["n"] = len(v)
+    v8, vE = FP[(st, "fedper")], FP[(st, "fedper_E3")]
+    if len(v8) > 3:
+        sig_t.append(sigrec(st, "fedper8", "fedbn", v8, fl[(st, "fedbn")]))
+        sig_t.append(sigrec(st, "fedper8", "local", v8, fl[(st, "local")]))
+    if vE:
+        cm[(st, "fedper_E3")] = vE
+        if cm.get((st, "local_E3")):
+            sig_t.append(sigrec(st, "fedper_E3", "local_E3", vE, cm[(st, "local_E3")]))
+        if cm.get((st, "fedbn_E3")):
+            sig_t.append(sigrec(st, "fedper_E3", "fedbn_E3", vE, cm[(st, "fedbn_E3")]))
+        if len(v8) > 3:
+            sig_t.append(sigrec(st, "fedper_E3", "fedper8", vE, v8))
 # table rows for the longer-budget comparison
 def _cell(v):
     return fmt(*agg(v, "f1")) if v else "--"
@@ -434,10 +468,12 @@ R.append("Local, 40 epochs (main) & " + " & ".join(_cell([r for r in fl[(st, "lo
 R.append("Local, 120 epochs & " + " & ".join(_cell(cm.get((st, "local_E3"))) for st in ("S1", "S2", "S3")) + " \\\\")
 R.append("FedAvg, E3 & " + " & ".join(_cell(cm.get((st, "fedavg_E3"))) for st in ("S1", "S2", "S3")) + " \\\\")
 R.append("FedBN, E3 & " + " & ".join(_cell(cm.get((st, "fedbn_E3"))) for st in ("S1", "S2", "S3")) + " \\\\")
+R.append("FedPer, E3 & " + " & ".join(_cell(cm.get((st, "fedper_E3"))) for st in ("S1", "S2", "S3")) + " \\\\")
 R.append("FedBN, 120 rounds of 1 epoch$^{a}$ & " + " & ".join(_cell(cm.get((st, "fedbn_R120"))) for st in ("S1", "S2", "S3")) + " \\\\")
 R.append("\\midrule")
 R.append("$\\Delta$ FedAvg E3 $-$ local 120 & " + " & ".join(_drow(st, "fedavg_E3") for st in ("S1", "S2", "S3")) + " \\\\")
 R.append("$\\Delta$ FedBN E3 $-$ local 120 & " + " & ".join(_drow(st, "fedbn_E3") for st in ("S1", "S2", "S3")) + " \\\\")
+R.append("$\\Delta$ FedPer E3 $-$ local 120 & " + " & ".join(_drow(st, "fedper_E3") for st in ("S1", "S2", "S3")) + " \\\\")
 open(os.path.join(TAB, "cm.tex"), "w").write("\n".join(R))
 summary["significance_tuned"] = sig_t
 
@@ -470,7 +506,7 @@ def perclass(runs, site=None, B=4000, seed=1):
 import warnings; warnings.filterwarnings("ignore", category=RuntimeWarning)
 PC = [("Local", fl.get(("S1", "local"))), ("FedAvg", fl[("S1", "fedavg")]), ("FedBN", fl[("S1", "fedbn")]),
       ("AP-FedBN", fl[("S1", "otofl")]), ("FedBN + FT", fl[("S1", "fedbn_ft")]),
-      ("Local, 120 ep.", cm.get(("S1", "local_E3"))), ("FedBN, E3", cm.get(("S1", "fedbn_E3"))), ("Centralised", cen["fenet5"])]
+      ("FedPer", FP.get(("S1", "fedper"))) if len(FP.get(("S1", "fedper"), [])) > 3 else ("FedPer", None), ("Local, 120 ep.", cm.get(("S1", "local_E3"))), ("FedBN, E3", cm.get(("S1", "fedbn_E3"))), ("FedPer, E3", cm.get(("S1", "fedper_E3"))), ("Centralised", cen["fenet5"])]
 rows = []; summary["perclass"] = {}
 for site, sname in [(0, "Site 1"), (1, "Site 2")]:
     for nm, v in PC:

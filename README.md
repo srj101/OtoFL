@@ -67,7 +67,7 @@ This should report 1,142 images, 207 near-duplicate pairs and 978 groups.
 **2. Run the experiments**
 
 ```bash
-python experiments/run_jobs.py work --workers 4            # all 405 runs
+python experiments/run_jobs.py work --workers 4            # all 444 runs
 python experiments/run_jobs.py work --filter fl/S1/         # or a subset, e.g. scenario S1
 ```
 
@@ -104,7 +104,7 @@ Robustness and Grad-CAM (`python post.py work work/post`) use seed-0 models save
 ## Evaluation protocol in brief
 
 - Splits are stratified by class and keep each near-duplicate group on one side; 20% of each site is held out for testing. The seed changes the split, the client partition and the initialisation.
-- The main strategies, fine-tuning, local training and the longer-training runs use eight seeds (0–7); centralised, tuned, ablation, scale, pretrained-backbone and DP runs use three (0–2).
+- The main strategies, FedPer, fine-tuning, local training and the longer-training runs use eight seeds (0–7); centralised, tuned, ablation, scale, pretrained-backbone and DP runs use three (0–2).
 - Comparisons use a two-level paired bootstrap (seeds, then near-duplicate groups within each site; 10,000 replicates) and Holm correction within a primary family of six pre-specified comparisons and an exploratory family. Three-seed comparisons are reported with seed-level paired t-intervals.
 - No test image is used for model selection or early stopping; the model after the final round is reported.
 

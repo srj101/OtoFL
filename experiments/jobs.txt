@@ -273,9 +273,22 @@ tune/S1/fedbn_E3_s7|--method fedbn --seed 7 --rounds 40 --local_epochs 3
 tune/S1/fedbn_R120_s0|--method fedbn --seed 0 --rounds 120 --local_epochs 1
 tune/S1/fedbn_R120_s1|--method fedbn --seed 1 --rounds 120 --local_epochs 1
 tune/S1/fedbn_R120_s2|--method fedbn --seed 2 --rounds 120 --local_epochs 1
+tune/S1/fedper_E3_s0|--method fedper --seed 0 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s1|--method fedper --seed 1 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s2|--method fedper --seed 2 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s3|--method fedper --seed 3 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s4|--method fedper --seed 4 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s5|--method fedper --seed 5 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s6|--method fedper --seed 6 --rounds 40 --local_epochs 3
+tune/S1/fedper_E3_s7|--method fedper --seed 7 --rounds 40 --local_epochs 3
 tune/S1/fedper_s0|--method fedper --seed 0 --rounds 40 --local_epochs 1
 tune/S1/fedper_s1|--method fedper --seed 1 --rounds 40 --local_epochs 1
 tune/S1/fedper_s2|--method fedper --seed 2 --rounds 40 --local_epochs 1
+tune/S1/fedper_s3|--method fedper --seed 3 --rounds 40 --local_epochs 1
+tune/S1/fedper_s4|--method fedper --seed 4 --rounds 40 --local_epochs 1
+tune/S1/fedper_s5|--method fedper --seed 5 --rounds 40 --local_epochs 1
+tune/S1/fedper_s6|--method fedper --seed 6 --rounds 40 --local_epochs 1
+tune/S1/fedper_s7|--method fedper --seed 7 --rounds 40 --local_epochs 1
 tune/S1/fedprox_mu0.1_s0|--method fedprox --seed 0 --rounds 40 --local_epochs 1 --mu 0.1
 tune/S1/fedprox_mu0.1_s1|--method fedprox --seed 1 --rounds 40 --local_epochs 1 --mu 0.1
 tune/S1/fedprox_mu0.1_s2|--method fedprox --seed 2 --rounds 40 --local_epochs 1 --mu 0.1
@@ -310,9 +323,22 @@ tune/S2/fedbn_E3_s7|--method fedbn --seed 7 --clients 10 --alpha 0.3 --rounds 40
 tune/S2/fedbn_R120_s0|--method fedbn --seed 0 --clients 10 --alpha 0.3 --rounds 120 --local_epochs 1
 tune/S2/fedbn_R120_s1|--method fedbn --seed 1 --clients 10 --alpha 0.3 --rounds 120 --local_epochs 1
 tune/S2/fedbn_R120_s2|--method fedbn --seed 2 --clients 10 --alpha 0.3 --rounds 120 --local_epochs 1
+tune/S2/fedper_E3_s0|--method fedper --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s1|--method fedper --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s2|--method fedper --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s3|--method fedper --seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s4|--method fedper --seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s5|--method fedper --seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s6|--method fedper --seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
+tune/S2/fedper_E3_s7|--method fedper --seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
 tune/S2/fedper_s0|--method fedper --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
 tune/S2/fedper_s1|--method fedper --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
 tune/S2/fedper_s2|--method fedper --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s3|--method fedper --seed 3 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s4|--method fedper --seed 4 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s5|--method fedper --seed 5 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s6|--method fedper --seed 6 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
+tune/S2/fedper_s7|--method fedper --seed 7 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 1
 tune/S2/fedprox_E3_s0|--method fedprox --seed 0 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
 tune/S2/fedprox_E3_s1|--method fedprox --seed 1 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
 tune/S2/fedprox_E3_s2|--method fedprox --seed 2 --clients 10 --alpha 0.3 --rounds 40 --local_epochs 3
@@ -364,9 +390,22 @@ tune/S3/fedbn_E3_s7|--method fedbn --seed 7 --clients 10 --rounds 40 --local_epo
 tune/S3/fedbn_R120_s0|--method fedbn --seed 0 --clients 10 --rounds 120 --local_epochs 1
 tune/S3/fedbn_R120_s1|--method fedbn --seed 1 --clients 10 --rounds 120 --local_epochs 1
 tune/S3/fedbn_R120_s2|--method fedbn --seed 2 --clients 10 --rounds 120 --local_epochs 1
+tune/S3/fedper_E3_s0|--method fedper --seed 0 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s1|--method fedper --seed 1 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s2|--method fedper --seed 2 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s3|--method fedper --seed 3 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s4|--method fedper --seed 4 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s5|--method fedper --seed 5 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s6|--method fedper --seed 6 --clients 10 --rounds 40 --local_epochs 3
+tune/S3/fedper_E3_s7|--method fedper --seed 7 --clients 10 --rounds 40 --local_epochs 3
 tune/S3/fedper_s0|--method fedper --seed 0 --clients 10 --rounds 40 --local_epochs 1
 tune/S3/fedper_s1|--method fedper --seed 1 --clients 10 --rounds 40 --local_epochs 1
 tune/S3/fedper_s2|--method fedper --seed 2 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s3|--method fedper --seed 3 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s4|--method fedper --seed 4 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s5|--method fedper --seed 5 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s6|--method fedper --seed 6 --clients 10 --rounds 40 --local_epochs 1
+tune/S3/fedper_s7|--method fedper --seed 7 --clients 10 --rounds 40 --local_epochs 1
 tune/S3/fedprox_mu0.1_s0|--method fedprox --seed 0 --clients 10 --rounds 40 --local_epochs 1 --mu 0.1
 tune/S3/fedprox_mu0.1_s1|--method fedprox --seed 1 --clients 10 --rounds 40 --local_epochs 1 --mu 0.1
 tune/S3/fedprox_mu0.1_s2|--method fedprox --seed 2 --clients 10 --rounds 40 --local_epochs 1 --mu 0.1

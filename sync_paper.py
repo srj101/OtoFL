@@ -8,10 +8,10 @@ for d in [A, "post"]:
     for f in os.listdir(f"{S}/{d}/figures"):
         if f.endswith(".pdf") or f.endswith(".png"):
             shutil.copy(f"{S}/{d}/figures/{f}", f"{P}/figures/{f}")
-NM = {"fedavg": "FedAvg", "fedprox": "FedProx", "scaffold": "SCAFFOLD", "fedbn": "FedBN", "otofl": "AP-FedBN", "local": "local only", "fedbn_ft": "FedBN+FT"}
+NM = {"fedavg": "FedAvg", "fedprox": "FedProx", "scaffold": "SCAFFOLD", "fedbn": "FedBN", "otofl": "AP-FedBN", "local": "local only", "fedbn_ft": "FedBN+FT", "fedper": "FedPer"}
 sig = json.load(open(f"{S}/{A}/summary.json"))["significance"]
 order = [("fedbn", "fedavg"), ("fedbn", "fedprox"), ("fedbn", "scaffold"), ("fedprox", "fedavg"), ("otofl", "fedbn"),
-         ("fedbn_ft", "fedbn"), ("fedbn", "local"), ("fedbn_ft", "local"), ("otofl", "local"), ("fedavg", "local")]
+         ("fedbn_ft", "fedbn"), ("fedper", "fedbn"), ("fedbn", "local"), ("fedper", "local"), ("fedbn_ft", "local"), ("otofl", "local"), ("fedavg", "local")]
 sel = []
 for st in ["S1", "S2", "S3"]:
     for a, v in order:
