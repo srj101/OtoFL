@@ -1,6 +1,6 @@
 # OtoFL: a federated learning benchmark for otoscopy
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-ee4c2c.svg) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24165177.svg)](https://doi.org/10.5281/zenodo.24165177)
 
 Code for the paper
 
@@ -110,7 +110,7 @@ Robustness and Grad-CAM (`python post.py work work/post`) use seed-0 models save
 
 ## Citation
 
-If you use this code, please cite the paper (see `CITATION.cff`).
+If you use this code, please cite the paper (see `CITATION.cff`) and the archived software: Joy, M. S. R., & Faruqi, N. (2026). *OtoFL: a federated learning benchmark for otoscopy* (v1.0.0). Zenodo. <https://doi.org/10.5281/zenodo.24165178>. The concept DOI for all versions is [10.5281/zenodo.24165177](https://doi.org/10.5281/zenodo.24165177).
 
 ## License
 

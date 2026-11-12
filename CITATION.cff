@@ -7,6 +7,8 @@ authors:
   - family-names: Faruqi
     given-names: Nusrat
 license: MIT
+version: 1.0.0
+doi: 10.5281/zenodo.24165178
 repository-code: "https://github.com/srj101/OtoFL"
 preferred-citation:
   type: article
