@@ -4,8 +4,10 @@ title: "OtoFL: federated learning benchmark for otoscopy"
 authors:
   - family-names: Joy
     given-names: Md. Salim Reza
+    orcid: "https://orcid.org/0009-0007-4393-9105"
   - family-names: Faruqi
     given-names: Nusrat
+    orcid: "https://orcid.org/0009-0000-1138-0027"
 license: MIT
 version: 1.0.0
 doi: 10.5281/zenodo.24165178
@@ -16,7 +18,11 @@ preferred-citation:
   authors:
     - family-names: Joy
       given-names: Md. Salim Reza
+      orcid: "https://orcid.org/0009-0007-4393-9105"
+    orcid: "https://orcid.org/0009-0007-4393-9105"
     - family-names: Faruqi
       given-names: Nusrat
+      orcid: "https://orcid.org/0009-0000-1138-0027"
+    orcid: "https://orcid.org/0009-0000-1138-0027"
   status: submitted
   year: 2026

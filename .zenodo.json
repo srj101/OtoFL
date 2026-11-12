@@ -3,10 +3,25 @@
   "upload_type": "software",
   "description": "Code for the manuscript \"When does federated learning help otoscopy? A two-hospital benchmark of federated strategies and differential privacy\" (under review). It combines two public otoscopy datasets from hospitals in Chile and Turkey, groups near-duplicate video frames before splitting, and compares federated strategies (FedAvg, FedProx, SCAFFOLD, FedBN, AP-FedBN, FedPer and others) with local and centralised training and sample-level differential privacy. The repository contains the training code, the exact arguments of every run in the paper, and the scripts that produce every table and figure.",
   "creators": [
-    {"name": "Joy, Md. Salim Reza", "affiliation": "Department of Computer Science and Engineering, Daffodil International University"},
-    {"name": "Faruqi, Nusrat", "affiliation": "Department of Computer Science and Engineering, Daffodil International University"}
+    {
+      "name": "Joy, Md. Salim Reza",
+      "affiliation": "Department of Computer Science and Engineering, Daffodil International University",
+      "orcid": "0009-0007-4393-9105"
+    },
+    {
+      "name": "Faruqi, Nusrat",
+      "affiliation": "Department of Computer Science and Engineering, Daffodil International University",
+      "orcid": "0009-0000-1138-0027"
+    }
   ],
   "license": "MIT",
   "access_right": "open",
-  "keywords": ["federated learning", "otoscopy", "otitis media", "data heterogeneity", "differential privacy", "medical image classification"]
+  "keywords": [
+    "federated learning",
+    "otoscopy",
+    "otitis media",
+    "data heterogeneity",
+    "differential privacy",
+    "medical image classification"
+  ]
 }
